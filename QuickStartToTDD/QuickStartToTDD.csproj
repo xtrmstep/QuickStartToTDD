@@ -58,18 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WorkingCode.TDD\WorkingCode.TDD.csproj">
-      <Project>{10d0029c-6509-4e8f-ba1a-8a213f9b9037}</Project>
-      <Name>WorkingCode.TDD</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WorkingCode\WorkingCode.csproj">
-      <Project>{7c7145a9-577e-4870-bdfb-0b9e0afa9d80}</Project>
-      <Name>WorkingCode</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
