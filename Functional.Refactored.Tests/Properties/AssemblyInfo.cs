@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QuickStartToTDD.Calculators")]
+[assembly: AssemblyTitle("Functional.Refactored.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QuickStartToTDD.Calculators")]
+[assembly: AssemblyProduct("Functional.Refactored.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3460056c-5d5a-4558-8cea-14e3d76e4796")]
+[assembly: Guid("24f250b7-203a-4f8c-85c1-f38fede9a943")]
 
 // Version information for an assembly consists of the following four values:
 //

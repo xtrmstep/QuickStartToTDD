@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QuickStartToTDD.ComplexObjects")]
+[assembly: AssemblyTitle("Functional")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QuickStartToTDD.ComplexObjects")]
+[assembly: AssemblyProduct("Functional")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("51e8d4b3-b57b-4fc8-b052-3e3245414062")]
+[assembly: Guid("1092be92-f45a-4fa7-8a46-e7654bfbc1d5")]
 
 // Version information for an assembly consists of the following four values:
 //
