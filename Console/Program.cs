@@ -1,30 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Functional;
+﻿using System.IO;
+using Functional.Bad;
 
 namespace Console
 {
-    class Program
+    internal class Program
     {
-        const string path = @"c:\Users\Alexander.Goida\Downloads\image.jpg";
-                
-        static void Main(string[] args)
+        private static void Main()
         {
-            //var inputLine = System.Console.ReadLine();
-            //if (string.IsNullOrWhiteSpace(inputLine) == false)
+            string path = Path.GetTempPath() + "image.jpg";
+
+            Engine eng = new Engine();
+            int[] seq = eng.Calc(new[]
             {
-                //var sequense = inputLine.Split(' ').Select(int.Parse).ToArray();
-                var eng = new Engine();
-                var seq = eng.Calc(new[]
-                {
-                    100, 150, 90, 45, 67, 44, 88, 65
-                });
-                eng.Draw(path, seq);
-                eng.Show(path);
-            }
+                200, 250, 190, 145, 167, -44, 188, 165
+            });
+            eng.Draw(path, seq);
         }
     }
 }

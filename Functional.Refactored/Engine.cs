@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Functional.Bad
+namespace Functional.Good
 {
     public class Engine
     {
@@ -21,7 +21,6 @@ namespace Functional.Bad
                     x += step;
                 }
             }
-            Show(pngPath);
         }
 
         public void Show(string pngPath)

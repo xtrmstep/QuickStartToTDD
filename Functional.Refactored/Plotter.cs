@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 
-namespace Functional.Bad
+namespace Functional.Good
 {
     internal class Plotter : IDisposable
     {
