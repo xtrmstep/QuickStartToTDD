@@ -1,10 +1,20 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Functional.Bad;
 using Xunit;
 
 namespace Functional.Tests
 {
-    public class ClassFixture
+    public abstract class BaseClassFixture
+    {
+        public int IntField
+        {
+            get;
+            set;
+        }
+    }
+
+    public class ClassFixture : BaseClassFixture
     {
         
     }
@@ -55,10 +65,10 @@ namespace Functional.Tests
     }
 
     [Collection("TestContext")]
-    public class EngineTests : IClassFixture<ClassFixture>
+    public class EngineTests : IClassFixture<ClassFixture>, IDisposable
     {
         private readonly CollectionFixture collectionFixture;
-        private ClassFixture classFixture;
+        private BaseClassFixture classFixture;
 
         public EngineTests(CollectionFixture collectionFixture, ClassFixture classFixture)
         {
@@ -74,6 +84,24 @@ namespace Functional.Tests
             collectionFixture.AssertSequence(expected, actual);
         }
 
-        
+        [Fact]
+        public void TestMethod2()
+        {
+            int[] expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] actual = collectionFixture.CalcEngine.Calc(expected);
+            collectionFixture.AssertSequence(expected, actual);
+        }
+
+        #region Implementation of IDisposable
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+        /// </summary>
+        public void Dispose()
+        {
+            
+        }
+
+        #endregion
     }
 }
